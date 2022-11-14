@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 13, 2022 at 02:15 PM
--- Server version: 10.4.25-MariaDB
--- PHP Version: 8.0.23
+-- Generation Time: Nov 14, 2022 at 03:55 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -48,7 +48,8 @@ CREATE TABLE `archive_list` (
 --
 
 INSERT INTO `archive_list` (`id`, `archive_code`, `curriculum_id`, `year`, `title`, `abstract`, `members`, `banner_path`, `document_path`, `status`, `student_id`, `date_created`, `date_updated`) VALUES
-(1, '2022110001', 1, 2022, 'A Simple PDF File', '&lt;p&gt;This is a small demonstration .pdf file - \r\n just for use in the Virtual Mechanics tutorials. More text. And more \r\n text. And more text. And more text. And more text. \r\n And more text. And more text. And more text. And more text. And more \r\n text. And more text. Boring, zzzzz. And more text. And more text. And \r\n more text. And more text. And more text. And more text. And more text. \r\n And more text. And more text.&lt;br&gt;&lt;/p&gt;', 'Sharlote D. Isip', 'uploads/banners/archive-1.png?v=1668343654', 'uploads/pdf/archive-1.pdf?v=1668343654', 1, 4, '2022-11-13 20:47:34', '2022-11-13 20:52:55');
+(1, '2022110001', 1, 2022, 'A Simple PDF File', '&lt;p&gt;This is a small demonstration .pdf file - \r\n just for use in the Virtual Mechanics tutorials. More text. And more \r\n text. And more text. And more text. And more text. \r\n And more text. And more text. And more text. And more text. And more \r\n text. And more text. Boring, zzzzz. And more text. And more text. And \r\n more text. And more text. And more text. And more text. And more text. \r\n And more text. And more text.&lt;br&gt;&lt;/p&gt;', 'Sharlote D. Isip', 'uploads/banners/archive-1.png?v=1668343654', 'uploads/pdf/archive-1.pdf?v=1668343654', 1, 4, '2022-11-13 20:47:34', '2022-11-13 20:52:55'),
+(2, '2022110002', 1, 2022, 'sample 2 system', '&lt;p&gt;sample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 systemsample 2 system&lt;br&gt;&lt;/p&gt;', '&lt;p&gt;author 1&lt;/p&gt;&lt;p&gt;author 2&lt;/p&gt;&lt;p&gt;author 3&lt;/p&gt;&lt;p&gt;author 4&lt;br&gt;&lt;/p&gt;', 'uploads/banners/archive-2.png?v=1668349261', 'uploads/pdf/archive-2.pdf?v=1668349261', 1, 4, '2022-11-13 22:21:01', '2022-11-13 22:25:48');
 
 -- --------------------------------------------------------
 
@@ -71,9 +72,7 @@ CREATE TABLE `curriculum_list` (
 --
 
 INSERT INTO `curriculum_list` (`id`, `department_id`, `name`, `description`, `status`, `date_created`, `date_updated`) VALUES
-(1, 1, 'Bachelor of Science in Information Technology', 'Information Technology program is focuses on the technical theories and applications of particular studies', 1, '2022-11-12 20:41:35', NULL),
-(2, 1, 'Bachelor of Science in Computer Science', 'Computer Science is a program that focuses on the algorithms of the particular part of a study', 1, '2022-11-12 21:11:24', NULL),
-(3, 2, 'Bachelor of Elementary Education', 'Elementary Education is a program of that focuses on the learning for elementary students in a school', 1, '2022-11-12 21:38:57', NULL);
+(1, 1, 'Bachelor of Science in Information Technology', 'Information Technology program is focuses on the technical theories and applications of particular studies', 1, '2022-11-12 20:41:35', NULL);
 
 -- --------------------------------------------------------
 
@@ -95,8 +94,7 @@ CREATE TABLE `department_list` (
 --
 
 INSERT INTO `department_list` (`id`, `name`, `description`, `status`, `date_created`, `date_updated`) VALUES
-(1, 'College of Computing Studies', 'College of Computing Studies is a department on Don Honorio Ventura State University that offers some programs in terms of computing, like BSIT, BSCS, ACT, BSCEn', 1, '2022-11-12 20:37:42', '2022-11-13 20:41:25'),
-(2, 'College of Education', 'College of Education is a department that offers some programs like BEEd, BSE', 1, '2022-11-12 21:34:47', NULL);
+(1, 'College of Computing Studies', 'College of Computing Studies is a department on Don Honorio Ventura State University that offers some programs in terms of computing, like BSIT, BSCS, ACT, BSCEn', 1, '2022-11-12 20:37:42', '2022-11-13 20:41:25');
 
 -- --------------------------------------------------------
 
@@ -125,7 +123,8 @@ CREATE TABLE `student_list` (
 --
 
 INSERT INTO `student_list` (`id`, `firstname`, `middlename`, `lastname`, `department_id`, `curriculum_id`, `email`, `password`, `gender`, `status`, `avatar`, `date_created`, `date_updated`) VALUES
-(4, 'Sharlote', 'Dela Cruz', 'Isip', 1, 1, 'sharloteisip@gmail.com', 'e9dc592ec9797c064a90308c666a2b37', 'Female', 1, '', '2022-11-12 23:07:43', '2022-11-12 23:18:25');
+(4, 'Sharlote', 'Dela Cruz', 'Isip', 1, 1, 'sharloteisip@gmail.com', 'e9dc592ec9797c064a90308c666a2b37', 'Female', 1, '', '2022-11-12 23:07:43', '2022-11-12 23:18:25'),
+(6, 'abbygail', '', 'chinita', 1, 1, 'abbygail@d.com', '202cb962ac59075b964b07152d234b70', 'Female', 1, '', '2022-11-13 22:14:31', '2022-11-13 22:14:43');
 
 -- --------------------------------------------------------
 
@@ -144,8 +143,8 @@ CREATE TABLE `system_info` (
 --
 
 INSERT INTO `system_info` (`id`, `meta_field`, `meta_value`) VALUES
-(1, 'name', 'Don Honorio Ventura State University'),
-(6, 'short_name', 'REPO'),
+(1, 'name', 'Don Honorio Ventura State University Lubao Campus'),
+(6, 'short_name', 'Repo: CRS for DLC'),
 (11, 'logo', 'uploads/logo-1668233559.png'),
 (13, 'user_avatar', 'uploads/user_avatar.jpg'),
 (14, 'cover', 'uploads/cover-1668233559.png'),
@@ -242,7 +241,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `archive_list`
 --
 ALTER TABLE `archive_list`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `curriculum_list`
@@ -260,7 +259,7 @@ ALTER TABLE `department_list`
 -- AUTO_INCREMENT for table `student_list`
 --
 ALTER TABLE `student_list`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `system_info`

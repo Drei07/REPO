@@ -27,17 +27,28 @@ Follow the Instruction below. If problem occurs just pm me.
      - (Note: it depends on the local/server, just follow the information provided by your host incase you uploaded it online).
 # Credentials/Users Account
 ## Administrator:
-- School Superadmin
+- Superadmin
 admin@dhvsu.edu.ph - admin123
 - School MIS
 mis@dhvsu.edu.ph - mis123
-- School DIRR
+- School DIRRCTOR of Research
 dirr@dhvsu.edu.ph - dirr123
-- School VPRET
+- School Vice President for Research
 vpret@dhvsu.edu.ph - vpret123
 - School Instructor
 instructor1@dhvsu.edu.ph - instructor123
 ## User:
 - Student
 sharloteisip@gmail.com - shar123
+
+
+flow
+
+student to create the study
+instructor to recommend the study
+approved by the dirr(director of research) 
+study will be visible to vpret for approval of the study to be published
+dirr to publish approved study bythe VPRET
+
+
 
