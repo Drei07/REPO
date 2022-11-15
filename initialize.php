@@ -14,6 +14,6 @@ $dev_data = array('id'=>'-1','firstname'=>'Developer','lastname'=>'','username'=
     if(!defined('dev_data')) define('dev_data',$dev_data);
     if(!defined('DB_SERVER')) define('DB_SERVER',"localhost");
     if(!defined('DB_USERNAME')) define('DB_USERNAME',"u867039073_dhvsurepo");
-    if(!defined('DB_PASSWORD')) define('DB_PASSWORD',"Dhvsurepo");
+    if(!defined('DB_PASSWORD')) define('DB_PASSWORD',"Dhvsurepo2022");
     if(!defined('DB_NAME')) define('DB_NAME',"u867039073_dhvsurepo");
 ?>  
